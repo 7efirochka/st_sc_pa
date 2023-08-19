@@ -1,9 +1,8 @@
-import random
 from random import randrange
 
 end = ["Вы победили", "Боевая ничья", "Вы проиграли"]
 transl = {0: "камень", 1: "ножницы", 2: "бумага"}
-motion_of_program = random.randrange(0, 3)
+motion_of_program = randrange(0, 3)
 motion_of_user = input(f"Выберите и напишите: камень, ножницы или бумага: \n").lower()
 print(f"Ваш выбор: {motion_of_user}")
 print(f"Выбор оппонентa: {transl[motion_of_program]}")
